@@ -40,6 +40,20 @@
         display: none;
       }
     }
+    .collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 30px;
+}
+
+.collage img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* sorgt für schöne Bildausschnitte */
+  border-radius: 10px;
+}
+
   </style>
 </head>
 <body>
@@ -51,6 +65,13 @@
     <a href="#">Insta: paulkracker</a>
     <a href="#">Nummer: +49 0151 70052194</a>
   </nav>
+  <section class="collage img">
+    <img src="IMG_0648.png" alt="Bild 1">
+    <img src="IMG_0649.jpeg" alt="Bild 2">
+    <img src="IMG_0651.jpeg" alt="Bild 3">
+    <img src="IMG_0652.jpeg" alt="Bild 4">
+  </section>
+  
 </header>
 
 </body>
